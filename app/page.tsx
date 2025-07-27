@@ -180,7 +180,8 @@ Submitted at: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
                     className="border-2 border-amber-500 text-amber-600 hover:bg-amber-50 px-10 py-6 text-xl rounded-2xl font-semibold bg-transparent"
                   >
                     <Users className="h-5 w-5" />
-                    Schedule A Meeting
+                    Book Demo
+                    <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>
                 </Link>
                 
