@@ -134,6 +134,14 @@ Submitted at: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
     <div className="min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 py-24 px-4 overflow-hidden">
+        <div className="absolute top-8 right-8 z-20">
+          <img
+            src="https://crm.reciprocal.co.in/fav.png"
+            alt="Company Logo"
+            className="w-20 h-20 rounded-2xl shadow-lg border-4 border-white"
+            style={{ objectFit: "contain" }}
+          />
+        </div>
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] opacity-5"></div>
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-amber-200 rounded-full opacity-20 animate-pulse"></div>
@@ -780,21 +788,21 @@ Submitted at: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
                 <Phone className="h-6 w-6" />
               </div>
               <p className="text-xl font-semibold mb-2">Call Us</p>
-              <p className="text-gray-400">+91 97915 97993</p>
+              <p className="text-gray-400"><a href="tel:+919791597993">+91 97915 97993</a></p>
             </div>
             <div className="text-center">
               <div className="bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-6 w-6" />
               </div>
               <p className="text-xl font-semibold mb-2">Email Us</p>
-              <p className="text-gray-400">info@thereciprocalsolutions.com</p>
+              <p className="text-gray-400"><a href="mailto:info@thereciprocalsolutions.com">info@thereciprocalsolutions.com</a></p>
             </div>
             <div className="text-center">
               <div className="bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="h-6 w-6" />
               </div>
               <p className="text-xl font-semibold mb-2">Visit Us</p>
-              <p className="text-gray-400">www.thereciprocalsolutions.com</p>
+              <p className="text-gray-400"><a href="https://www.thereciprocalsolutions.com" target="_blank" rel="noopener noreferrer">www.thereciprocalsolutions.com</a></p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center">
@@ -802,6 +810,27 @@ Submitted at: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
               © 2025 The Reciprocal Solutions. Made with ❤️ in India for Indian businesses.
             </p>
           </div>
+        </div>
+        {/* Floating corner icons */}
+        <div className="fixed bottom-8 left-8 z-50 animate-bounce">
+          <a
+            href="https://wa.me/919791597993"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-4 flex items-center justify-center transition-transform hover:scale-110"
+            aria-label="WhatsApp"
+          >
+            <MessageCircle className="h-7 w-7" />
+          </a>
+        </div>
+        <div className="fixed bottom-8 right-8 z-50 animate-bounce">
+          <a
+            href="tel:+919791597993"
+            className="bg-amber-500 hover:bg-amber-600 text-white rounded-full shadow-lg p-4 flex items-center justify-center transition-transform hover:scale-110"
+            aria-label="Call"
+          >
+            <Phone className="h-7 w-7" />
+          </a>
         </div>
       </footer>
 
